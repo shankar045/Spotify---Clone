@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+
+body {
+    background-color: antiquewhite;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: block;
+    position: sticky;
+    font-family: 'Ubuntu', sans-serif;
+    top: 0;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 65px;
+    background-color: black;
+    color: white;
+}
+
+nav ul li {
+    padding: 0px 15px;
+}
+
+.brand img {
+    width: 50px;
+    padding: 0 10px 0px 0px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.container {
+    min-height: 72vh;
+    background-color: black;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    margin: 23px auto;
+    width: 85%;
+    border-radius: 12px;
+    padding: 34px;
+    background-image: url('./items/bg.jpg');
+}
+
+.bottom {
+    position: sticky;
+    height: 120px;
+    background-color: black;
+    color: white;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#myProgressBar {
+    width: 80vw;
+    cursor: pointer;
+}
+
+.icons {
+    margin: 12px 12px;
+}
+
+.icons i {
+    margin: 12px 12px;
+    cursor: pointer;
+}
+
+.songItem {
+    height: 50px;
+    display: flex;
+    background-color: white;
+    color: black;
+    margin: 20px 0;
+    border-radius: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.songItem img {
+    height: 45px;
+    border-radius: 12px;
+    margin: 0px 20px;
+}
+
+.timeStamp {
+    margin: 0 20px;
+}
+
+.songItemContainer {
+    margin-top: 30px;
+}
+
+.songItemContainer i {
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+.songInfo {
+    position: absolute;
+    left: 10vw;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.songInfo img {
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+}
+
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: medium;
+    }
+
+    .bottom {
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    #myProgressBar {
+        width: 80vw;
+        cursor: pointer;
+    }
+    
+    .icons {
+        margin: 5px 5px;
+    }
+    
+    .icons i {
+        font-size: inherit;
+        margin: 0px 10px;
+        cursor: pointer;
+    }
+    .songInfo {
+        position: relative;
+        left: 0;
+        font-family: 'Ubuntu', sans-serif;
+    }
+
+    .songItem{
+        height: 100px;
+        flex-direction: column;
+        margin: 10px 10px;
+    }
+}
